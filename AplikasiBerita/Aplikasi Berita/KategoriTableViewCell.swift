@@ -10,6 +10,7 @@ import UIKit
 
 class KategoriTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelKategori: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

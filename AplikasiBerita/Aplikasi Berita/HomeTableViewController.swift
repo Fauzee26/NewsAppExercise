@@ -11,29 +11,38 @@ import Alamofire
 import SwiftyJSON
 
 class HomeTableViewController: UITableViewController {
+    
     var judulSelected:String?
     var isiSelected:String?
     //  var gambarSelcetd:String?
     
-    var berita = [Berita]()
     var arrRes = [[String:AnyObject]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //memanggil data json menggunakan alamofire
-        Alamofire.request("http://localhost/ServerBerita/index.php/api/getBerita").responseJSON { (responseData) -> Void in
-            if((responseData.result.value) != nil) {
-                let swiftyJsonVar = JSON(responseData.result.value!)
+        Alamofire.request("http://localhost/ServerBerita/index.php/api/getBerita").responseJSON { (response) in
+            
+            //check response
+            if response.result.isSuccess {
+                //kalau respon sukses kita ambil json
+                let json = JSON(response.result.value as Any)
+                //get jsonArray dari json Diatas
+                self.arrRes = json["List Berita"].arrayObject as! [[String : AnyObject]]
+                //check di log
+                //print(self.arrayBerita)
                 
-                if let resData = swiftyJsonVar["List Berita"].arrayObject {
-                    self.arrRes = resData as! [[String:AnyObject]]
-                }
-                if self.arrRes.count > 0 {
+                //check jumlah array
+                if(self.arrRes.count > 0){
+                    //refresh table view
                     self.tableView.reloadData()
                 }
+            }else{
+                print("Error Server")
             }
         }
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,7 +65,8 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
         var dict = arrRes[indexPath.row]
-        cell.lblJudul.text = dict["judul"] as? String
+        let dictJudul = dict["judul"]
+        cell.lblJudul.text = dictJudul as! String
         //    cell.labelgambar.image = dict["gambar"] as! String
         
         

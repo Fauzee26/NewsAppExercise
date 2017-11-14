@@ -7,17 +7,36 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class KategoriTableViewController: UITableViewController {
 
+    var arrKategori = [[String:String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        Alamofire.request("http://localhost/ServerBerita/index.php/api/getKategori").responseJSON { (response) in
+            
+            //check response
+            if response.result.isSuccess {
+                //kalau respon sukses kita ambil json
+                let json = JSON(response.result.value as Any)
+                //get jsonArray dari json Diatas
+                self.arrKategori = json["List Berita"].arrayObject as! [[String : String]]
+                //check di log
+                //print(self.arrayBerita)
+                
+                //check jumlah array
+                if(self.arrKategori.count > 0){
+                    //refresh table view
+                    self.tableView.reloadData()
+                }
+            }else{
+                print("Error Server")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +48,41 @@ class KategoriTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return arrKategori.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellKategori", for: indexPath) as! KategoriTableViewCell
+        
+        var serverid = arrKategori[indexPath.row]
+        
+        var id = serverid["id_kategori"]
+        let kategori = serverid["nama_kategori"]
+        
+        //pindahkan ke masing masing label
+        cell.labelKategori.text = kategori
 
         return cell
     }
-    */
+    
+    //pindah ke layout selanjutnya
+    //dan melempar ke id kategori
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //deklarasi idStoryBoard untuk pindah halaman
+        let idStoryBoard = storyboard?.instantiateViewController(withIdentifier: "beritaKategori") as! BeritaKategoriTableViewController
+        let id_kategori = arrKategori[indexPath.row]["id_kategori"]
+        //variable untuk menampung id_kategori yang dilempar
+        idStoryBoard.nampungId = id_kategori
+        
+        show(idStoryBoard, sender: self)
+    }
 
     /*
     // Override to support conditional editing of the table view.

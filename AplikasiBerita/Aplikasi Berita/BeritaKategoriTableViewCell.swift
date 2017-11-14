@@ -9,7 +9,10 @@
 import UIKit
 
 class BeritaKategoriTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var labelJudul: UILabel!
+    @IBOutlet weak var labelIsi: UILabel!
+    @IBOutlet weak var imgBerita: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

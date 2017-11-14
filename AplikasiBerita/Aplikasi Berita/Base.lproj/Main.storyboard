@@ -163,15 +163,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellKategori" rowHeight="72" id="HYg-Pm-M3w" customClass="KategoriTableViewCell" customModule="Aplikasi_Berita" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellKategori" rowHeight="56" id="HYg-Pm-M3w" customClass="KategoriTableViewCell" customModule="Aplikasi_Berita" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HYg-Pm-M3w" id="reJ-wn-lhY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-i6-3Kb">
-                                            <rect key="frame" x="8" y="8" width="224" height="41"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,6 +179,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelKategori" destination="CxO-i6-3Kb" id="V41-a2-gvo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -188,17 +191,17 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="history" id="WkT-hK-xXq"/>
                     <connections>
-                        <segue destination="Iv2-KR-d4a" kind="modal" id="cgq-Yt-C2x"/>
+                        <segue destination="Iv2-KR-d4a" kind="modal" identifier="pindahBerita" id="cgq-Yt-C2x"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0S-zo-AF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="470"/>
+            <point key="canvasLocation" x="637.60000000000002" y="469.1154422788606"/>
         </scene>
         <!--Berita Kategori Table View Controller-->
         <scene sceneID="nR1-dl-jbX">
             <objects>
-                <tableViewController id="Iv2-KR-d4a" customClass="BeritaKategoriTableViewController" customModule="Aplikasi_Berita" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="beritaKategori" id="Iv2-KR-d4a" customClass="BeritaKategoriTableViewController" customModule="Aplikasi_Berita" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cdP-5Z-DeE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +234,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgBerita" destination="0Hl-s0-UdQ" id="ybi-2g-RCG"/>
+                                    <outlet property="labelIsi" destination="Dlw-zo-etB" id="btu-sl-3ce"/>
+                                    <outlet property="labelJudul" destination="LCM-Bf-V6A" id="vjP-yu-wN4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

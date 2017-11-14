@@ -10,6 +10,9 @@ import UIKit
 
 class BeritaKategoriTableViewController: UITableViewController {
 
+    //deklarasi variabel untuk menampung id yang dikirim
+    var nampungId:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
