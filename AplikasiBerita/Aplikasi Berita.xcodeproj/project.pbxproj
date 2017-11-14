@@ -18,6 +18,11 @@
 		A09DBDC61FBA93980013C550 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDC51FBA93980013C550 /* HomeTableViewController.swift */; };
 		A09DBDC81FBA94BF0013C550 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDC71FBA94BF0013C550 /* HomeTableViewCell.swift */; };
 		A09DBDCA1FBA95EA0013C550 /* Berita.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDC91FBA95EA0013C550 /* Berita.swift */; };
+		A09DBDCC1FBACD390013C550 /* KategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDCB1FBACD390013C550 /* KategoriTableViewCell.swift */; };
+		A09DBDCE1FBACD480013C550 /* BeritaKategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDCD1FBACD480013C550 /* BeritaKategoriTableViewCell.swift */; };
+		A09DBDD01FBACD660013C550 /* KategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDCF1FBACD660013C550 /* KategoriTableViewController.swift */; };
+		A09DBDD21FBACD720013C550 /* BeritaKategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBDD11FBACD720013C550 /* BeritaKategoriTableViewController.swift */; };
+		EC64E38658EF99BED199343C /* Pods_Aplikasi_Berita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C340558A83792DA52F965 /* Pods_Aplikasi_Berita.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F72B1155BB54602EEFF9F63 /* Pods-Aplikasi Berita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplikasi Berita.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita.release.xcconfig"; sourceTree = "<group>"; };
+		427C340558A83792DA52F965 /* Pods_Aplikasi_Berita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aplikasi_Berita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450D520B3BE939555A3963D5 /* Pods-Aplikasi Berita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplikasi Berita.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita.debug.xcconfig"; sourceTree = "<group>"; };
 		A09DBD921FBA8E330013C550 /* Aplikasi Berita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aplikasi Berita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DBD951FBA8E330013C550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09DBD971FBA8E330013C550 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 		A09DBDC51FBA93980013C550 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		A09DBDC71FBA94BF0013C550 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A09DBDC91FBA95EA0013C550 /* Berita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berita.swift; sourceTree = "<group>"; };
+		A09DBDCB1FBACD390013C550 /* KategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewCell.swift; sourceTree = "<group>"; };
+		A09DBDCD1FBACD480013C550 /* BeritaKategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewCell.swift; sourceTree = "<group>"; };
+		A09DBDCF1FBACD660013C550 /* KategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewController.swift; sourceTree = "<group>"; };
+		A09DBDD11FBACD720013C550 /* BeritaKategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC64E38658EF99BED199343C /* Pods_Aplikasi_Berita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,8 @@
 				A09DBDAB1FBA8E330013C550 /* Aplikasi BeritaTests */,
 				A09DBDB61FBA8E330013C550 /* Aplikasi BeritaUITests */,
 				A09DBD931FBA8E330013C550 /* Products */,
+				D916A3AF898756CA18AA3C6A /* Pods */,
+				D7154DBF665F00540A540FCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,10 @@
 				A09DBD971FBA8E330013C550 /* FirstViewController.swift */,
 				A09DBD991FBA8E330013C550 /* SecondViewController.swift */,
 				A09DBD9B1FBA8E330013C550 /* Main.storyboard */,
+				A09DBDCB1FBACD390013C550 /* KategoriTableViewCell.swift */,
+				A09DBDCD1FBACD480013C550 /* BeritaKategoriTableViewCell.swift */,
+				A09DBDCF1FBACD660013C550 /* KategoriTableViewController.swift */,
+				A09DBDD11FBACD720013C550 /* BeritaKategoriTableViewController.swift */,
 				A09DBDC91FBA95EA0013C550 /* Berita.swift */,
 				A09DBDC71FBA94BF0013C550 /* HomeTableViewCell.swift */,
 				A09DBDC51FBA93980013C550 /* HomeTableViewController.swift */,
@@ -137,6 +156,23 @@
 			path = "Aplikasi BeritaUITests";
 			sourceTree = "<group>";
 		};
+		D7154DBF665F00540A540FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				427C340558A83792DA52F965 /* Pods_Aplikasi_Berita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D916A3AF898756CA18AA3C6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				450D520B3BE939555A3963D5 /* Pods-Aplikasi Berita.debug.xcconfig */,
+				1F72B1155BB54602EEFF9F63 /* Pods-Aplikasi Berita.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09DBDBC1FBA8E330013C550 /* Build configuration list for PBXNativeTarget "Aplikasi Berita" */;
 			buildPhases = (
+				64512F18AD22E5DB127CE8B5 /* [CP] Check Pods Manifest.lock */,
 				A09DBD8E1FBA8E330013C550 /* Sources */,
 				A09DBD8F1FBA8E330013C550 /* Frameworks */,
 				A09DBD901FBA8E330013C550 /* Resources */,
+				846C597C672433AB111AFFC4 /* [CP] Embed Pods Frameworks */,
+				ED2DBB508C0BE5EE70217AB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,16 +305,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64512F18AD22E5DB127CE8B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aplikasi Berita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846C597C672433AB111AFFC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2DBB508C0BE5EE70217AB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A09DBD8E1FBA8E330013C550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09DBDCC1FBACD390013C550 /* KategoriTableViewCell.swift in Sources */,
 				A09DBDC61FBA93980013C550 /* HomeTableViewController.swift in Sources */,
 				A09DBDC81FBA94BF0013C550 /* HomeTableViewCell.swift in Sources */,
 				A09DBD9A1FBA8E330013C550 /* SecondViewController.swift in Sources */,
+				A09DBDCE1FBACD480013C550 /* BeritaKategoriTableViewCell.swift in Sources */,
+				A09DBDD01FBACD660013C550 /* KategoriTableViewController.swift in Sources */,
 				A09DBD961FBA8E330013C550 /* AppDelegate.swift in Sources */,
 				A09DBDCA1FBA95EA0013C550 /* Berita.swift in Sources */,
+				A09DBDD21FBACD720013C550 /* BeritaKategoriTableViewController.swift in Sources */,
 				A09DBD981FBA8E330013C550 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +539,7 @@
 		};
 		A09DBDBD1FBA8E330013C550 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450D520B3BE939555A3963D5 /* Pods-Aplikasi Berita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +555,7 @@
 		};
 		A09DBDBE1FBA8E330013C550 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F72B1155BB54602EEFF9F63 /* Pods-Aplikasi Berita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

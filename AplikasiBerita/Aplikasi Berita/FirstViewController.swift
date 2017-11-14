@@ -12,7 +12,7 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var labelJudul: UILabel!
 //    @IBOutlet weak var labelImage: UIImageView!
-    @IBOutlet weak var labelIsi: UILabel!
+    @IBOutlet weak var labelIsi: UITextView!
     
     var passJudul:String?
 //    var passGambar:String?
