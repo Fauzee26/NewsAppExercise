@@ -66,7 +66,7 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
         var dict = arrRes[indexPath.row]
         let dictJudul = dict["judul"]
-        cell.lblJudul.text = dictJudul as! String
+        cell.lblJudul.text = dictJudul as? String
         //    cell.labelgambar.image = dict["gambar"] as! String
         
         

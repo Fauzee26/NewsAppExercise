@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06420B51FBBFB0A0061AC1D /* DetailKategoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06420B41FBBFB090061AC1D /* DetailKategoriViewController.swift */; };
 		A09DBD961FBA8E330013C550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBD951FBA8E330013C550 /* AppDelegate.swift */; };
 		A09DBD981FBA8E330013C550 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBD971FBA8E330013C550 /* FirstViewController.swift */; };
 		A09DBD9A1FBA8E330013C550 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DBD991FBA8E330013C550 /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 		1F72B1155BB54602EEFF9F63 /* Pods-Aplikasi Berita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplikasi Berita.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita.release.xcconfig"; sourceTree = "<group>"; };
 		427C340558A83792DA52F965 /* Pods_Aplikasi_Berita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aplikasi_Berita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D520B3BE939555A3963D5 /* Pods-Aplikasi Berita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplikasi Berita.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aplikasi Berita/Pods-Aplikasi Berita.debug.xcconfig"; sourceTree = "<group>"; };
+		A06420B41FBBFB090061AC1D /* DetailKategoriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKategoriViewController.swift; sourceTree = "<group>"; };
 		A09DBD921FBA8E330013C550 /* Aplikasi Berita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aplikasi Berita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DBD951FBA8E330013C550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09DBD971FBA8E330013C550 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A09DBD971FBA8E330013C550 /* FirstViewController.swift */,
 				A09DBD991FBA8E330013C550 /* SecondViewController.swift */,
 				A09DBD9B1FBA8E330013C550 /* Main.storyboard */,
+				A06420B41FBBFB090061AC1D /* DetailKategoriViewController.swift */,
 				A09DBDCB1FBACD390013C550 /* KategoriTableViewCell.swift */,
 				A09DBDCD1FBACD480013C550 /* BeritaKategoriTableViewCell.swift */,
 				A09DBDCF1FBACD660013C550 /* KategoriTableViewController.swift */,
@@ -375,6 +378,7 @@
 				A09DBD961FBA8E330013C550 /* AppDelegate.swift in Sources */,
 				A09DBDCA1FBA95EA0013C550 /* Berita.swift in Sources */,
 				A09DBDD21FBACD720013C550 /* BeritaKategoriTableViewController.swift in Sources */,
+				A06420B51FBBFB0A0061AC1D /* DetailKategoriViewController.swift in Sources */,
 				A09DBD981FBA8E330013C550 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
